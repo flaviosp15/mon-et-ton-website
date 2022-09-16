@@ -1,0 +1,141 @@
+.advice-title-row,
+.advice-paragraph,
+.advice-list,
+.advice-link,
+.carousel-conatiner {
+  display: flex;
+}
+.advice-paragraph,
+.advice-list,
+.advice-link {
+  flex-direction: column;
+}
+.advice-img,
+.advice-article {
+  max-height: 43.545rem;
+}
+.advice-img,
+.advice-link,
+.carousel-track {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.advice-container {
+  display: grid;
+  grid-template: auto / 1fr 2fr auto;
+  gap: 1.5rem;
+}
+.advice-img {
+  min-width: 25.5rem;
+  overflow: hidden;
+}
+.advice-img img {
+  min-height: 100%;
+  object-fit: cover;
+}
+.advice-article {
+  overflow: hidden;
+}
+.advice-title-row {
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.advice-title {
+  color: var(--color-p1);
+  font-size: clamp(2.8rem, 4vw, 3.6rem);
+  text-transform: capitalize;
+}
+.advice-paragraph {
+  gap: 1.5rem;
+  max-height: 38rem;
+  overflow: auto;
+  line-height: 1.6;
+}
+.advice-list {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.advice-link {
+  min-width: 9.3rem;
+  align-items: center;
+  background-color: var(--color-c1);
+  padding: 0.5rem;
+}
+.advice-container .svg-pink {
+  max-width: 3.6rem;
+  margin-bottom: 0.5rem;
+}
+.carousel {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.carousel-track {
+  margin: 0 auto;
+  max-width: 40rem;
+  position: relative;
+  padding: 2rem 4rem;
+  min-height: clamp(9rem, 10vw, 10.5rem);
+  background-color: var(--color-c1);
+  flex: 1;
+}
+.carousel-conatiner {
+  overflow: hidden;
+  gap: 2rem;
+}
+.carousel-img {
+  height: 6.5rem;
+  min-width: 6.5rem;
+  background-color: var(--color-p2);
+}
+.arrow-left-carousel,
+.arrow-right-carousel {
+  width: clamp(2.8rem, 4vw, 3.6rem);
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+}
+.arrow-left-carousel {
+  left: 0;
+}
+.arrow-right-carousel {
+  right: 0;
+}
+@media screen and (max-width: 780px) {
+  .advice-container {
+    grid-template: auto / 1fr 2fr;
+  }
+  .advice-container-links {
+    order: 3;
+    grid-column: 1 / -1;
+  }
+  .advice-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .advice-container {
+    grid-template: auto / 1fr;
+    gap: 3rem;
+  }
+  .advice-img {
+    max-width: 28rem;
+    justify-self: center;
+  }
+  .advice-article {
+    order: 2;
+    max-height: initial;
+  }
+  .advice-paragraph {
+    max-height: initial;
+  }
+}
+@media screen and (max-width: 440px) {
+  .carousel-track {
+    max-width: 23rem;
+  }
+}

@@ -1,0 +1,87 @@
+footer {
+  background-color: var(--color-p1);
+  color: var(--color-c1);
+}
+.container-footer,
+.footer-info {
+  display: grid;
+}
+.payments-types li,
+.container-icons {
+  display: flex;
+}
+.container-footer {
+  grid-template-rows: 1fr auto;
+  gap: 4rem 0;
+}
+.footer-info {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.footer-info h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+.footer-info ul li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+.footer-info section .row:not(:first-child) {
+  margin-top: 1rem;
+}
+.icon-payment {
+  display: inline-block;
+  width: 1.8rem;
+  margin-right: 0.5rem;
+}
+.link-list-footer li > a {
+  position: relative;
+  left: 0;
+  transition: var(--default-transition);
+  -webkit-transition: var(--default-transition);
+  -moz-transition: var(--default-transition);
+  -ms-transition: var(--default-transition);
+  -o-transition: var(--default-transition);
+}
+.container-icons img {
+  width: 2.5rem;
+  transition: var(--default-transition);
+  -webkit-transition: var(--default-transition);
+  -moz-transition: var(--default-transition);
+  -ms-transition: var(--default-transition);
+  -o-transition: var(--default-transition);
+}
+.container-icons {
+  gap: 1rem;
+}
+.rights {
+  text-align: center;
+}
+.rights a {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .container-icons img:hover {
+    scale: 1.2;
+  }
+  .link-list-footer li > a:hover {
+    left: 0.5rem;
+  }
+}
+
+/* ========================== TABLET ========================== */
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .footer-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 1rem;
+  }
+}
+/* ========================== END TABLET ========================== */
+
+/* ========================== SMARTPHONE ========================== */
+@media screen and (max-width: 480px) {
+  .footer-info {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+}
+/* ========================== END SMARTPHONE ========================== */
