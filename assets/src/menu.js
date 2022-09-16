@@ -42,7 +42,7 @@ export function toggleStickyMenu() {
   }
 }
 export function resizeScreen(event) {
-  document.location.reload();
+  // document.location.reload();
   const isNotMobileScreen = event.target.innerWidth >= 481;
   if (isNotMobileScreen) {
     navList.style.maxHeight = 'max-content';
