@@ -8,7 +8,7 @@ I developed this project to complete web designer course from SENAC RJ.
 - ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 - ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## 🖼️ Demo
+## 🎬 Demo
 
 Access the page by the link: [Mon Et Ton Website](https://monetton.netlify.app/index.html)
 
